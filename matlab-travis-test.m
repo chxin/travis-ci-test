@@ -1,1 +1,2 @@
-disp("Hello,World!")
+disp("Hello,World!");
+return 0;
