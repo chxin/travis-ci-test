@@ -1,3 +1,4 @@
 language: matlab
 matlab: latest
-script: matlab -batch 'matlab-travis-test'
+script: 
+  - matlab -batch 'disp("Hello World")'
