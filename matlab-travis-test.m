@@ -1,2 +1,6 @@
+function ret = matlab-travis-test()
+
 disp("Hello,World!");
-return 0;
+ret = 1;
+
+end
