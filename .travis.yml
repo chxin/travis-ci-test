@@ -1,7 +1,7 @@
 language: matlab
 matlab: latest
 script:
-- which matlab && whereis matlab
+- which matlab && whereis matlab && whereis mexext
 - make
 - matlab -batch 'disp("Start!")'
 - matlab -batch 'icesensor'
