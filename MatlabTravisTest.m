@@ -1,4 +1,4 @@
-function ret = matlab-travis-test()
+function ret = MatlabTravisTest()
 
 disp("Hello,World!");
 ret = 0;
