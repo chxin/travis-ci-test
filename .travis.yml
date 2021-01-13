@@ -1,8 +1,7 @@
 language: matlab
 matlab: latest
-before_script:
-- make
 script:
+- make
 - matlab -batch 'disp("Start!")'
 - matlab -batch 'icesensor'
 - matlab -batch 'disp("End!")'
