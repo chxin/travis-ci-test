@@ -1,6 +1,7 @@
 language: matlab
 matlab: latest
 script:
+- which matlab && whereis matlab
 - make
 - matlab -batch 'disp("Start!")'
 - matlab -batch 'icesensor'
