@@ -23,11 +23,11 @@ octave:
 
 binary: svmpredict.$(MEX_EXT) svmtrain.$(MEX_EXT) libsvmread.$(MEX_EXT) libsvmwrite.$(MEX_EXT)
 
-svmpredict.$(MEX_EXT):     svmpredict.c ../svm.h ../svm.cpp svm_model_matlab.c
-	$(MEX) $(MEX_OPTION) svmpredict.c ../svm.cpp svm_model_matlab.c
+svmpredict.$(MEX_EXT):     svmpredict.c ./svm.h ./svm.cpp svm_model_matlab.c
+	$(MEX) $(MEX_OPTION) svmpredict.c ./svm.cpp svm_model_matlab.c
 
-svmtrain.$(MEX_EXT):       svmtrain.c ../svm.h ../svm.cpp svm_model_matlab.c
-	$(MEX) $(MEX_OPTION) svmtrain.c ../svm.cpp svm_model_matlab.c
+svmtrain.$(MEX_EXT):       svmtrain.c ./svm.h ./svm.cpp svm_model_matlab.c
+	$(MEX) $(MEX_OPTION) svmtrain.c ./svm.cpp svm_model_matlab.c
 
 libsvmread.$(MEX_EXT):	libsvmread.c
 	$(MEX) $(MEX_OPTION) libsvmread.c
