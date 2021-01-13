@@ -1,4 +1,12 @@
-language: matlab
-matlab: latest
-script: 
-  - matlab -batch 'disp("Hello World")'
+language: c
+group: travis_latest
+
+addons:
+  apt:
+    packages:
+    - octave
+
+script:
+- octave-cli --eval "disp('Start!')"                              # Evaluate a built-in function from Octave CLI
+- octave-cli matlab-travis-test.m                                  # Running a MATLAB/Octave script in root
+- octave-cli --eval "matlab-travis-test()"                        # Running a custom MATLAB/Octave function in a subdirectory
