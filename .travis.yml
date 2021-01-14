@@ -8,6 +8,5 @@ script:
 - matlab -batch 'disp("End!")'
 - cp svm* build/
 - zip -r -q output.zip build
-- chmod +x ./qshell
 - ./qshell account rmT3lkdm0Hc5aDcLQ57e5DCk2Ui2uK3RMKaxCUJI Oc6GBz1O3Ike-5s4eDyYMbNcXV71mfvyDewkg54f chengxinhust@163.com
-- ./qshell rput chengxinhust travis/matlab/ output.zip
+- ./qshell rput chengxinhust travis/matlab/`date +%Y-%m-%d-%H:%M:%S` output.zip
